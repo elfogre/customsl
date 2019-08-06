@@ -1,2 +1,2 @@
 # customsl
-Customize your own SL skates
+Customize your own SL skates (Work in progress)
