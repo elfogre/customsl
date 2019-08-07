@@ -5,112 +5,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Custom SL skates!</title>
-    <link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
-    <label for="sel_A">Main toe: </label>
-	<select id="sel_A">
-		<option value="0">default</option>
-		<option value="1">yellow</option>
-		<option value="2">red</option>
-		    
-	</select>
-	<label for="sel_B">Decorate toe: </label>
-	<select id="sel_B">
-		<option value="0">default</option>
-		<option value="1">yellow</option>
-		<option value="2">red</option>
-		    
-	</select>
-	<label for="sel_pad">Lateral pad: </label>
-	<select id="sel_pad">
-		<option value="0">black</option>
-		<option value="1">yellow</option>
-		<option value="2">red</option>
-		<option value="3">blue</option>
-		<option value="4">orange</option>
-		<option value="5">light blue</option>
-		<option value="6">pink</option>
-		<option value="7">white</option>
-	</select>
+	<div class="container">
+			<div class="row">
+					<div class="col-6">
+							<img src="imgs/basic.jpg" class="color-img" />
+							<img id="A" src="imgs/A/A0.png" class="color-img" />
+							<img id="B" src="imgs/B/B0.png" class="color-img" />
+							<img id="tip" src="imgs/tip/tip0.png" class="color-img" />
+							<img id="bottomclose" src="imgs/bottomclose/bottomclose0.png" class="color-img" />
+							<img id="bottomstrip" src="imgs/bottomstrip/bottomstrip0.png" class="color-img" />
+							<img id="topclose" src="imgs/topclose/topclose0.png" class="color-img" />
+							<img id="topstrip" src="imgs/topstrip/topstrip0.png" class="color-img" />
+							<img id="pad" src="imgs/pad/pad0.png" class="color-img" />
+					</div>
+					<div class="col-6">
+							<label for="sel_A">Main toe: </label>
+							<select id="sel_A">
+								<option value="0">default</option>
+								<option value="1">yellow</option>
+								<option value="2">red</option>
+									
+							</select>
+							<label for="sel_B">Decorate toe: </label>
+							<select id="sel_B">
+								<option value="0">default</option>
+								<option value="1">yellow</option>
+								<option value="2">red</option>
+									
+							</select>
+							<label for="sel_pad">Lateral pad: </label>
+							<select id="sel_pad">
+								<option value="0">black</option>
+								<option value="1">yellow</option>
+								<option value="2">red</option>
+								<option value="3">blue</option>
+								<option value="4">orange</option>
+								<option value="5">light blue</option>
+								<option value="6">pink</option>
+								<option value="7">white</option>
+							</select>
+						
+							<label for="sel_tip">Tip: </label>
+							<select id="sel_tip">
+								<option value="0">black</option>
+								<option value="1">yellow</option>
+								<option value="2">red</option>
+								<option value="3">blue</option>
+								<option value="4">orange</option>
+								<option value="5">light blue</option>
+								<option value="6">pink</option>
+								<option value="7">white</option>
+							</select>
+						
+							<label for="sel_bottomstrip">Bottom strip: </label>
+							<select id="sel_bottomstrip">
+								<option value="0">black</option>
+								<option value="1">yellow</option>
+								<option value="2">red</option>
+								<option value="3">blue</option>
+								<option value="4">orange</option>
+								<option value="5">light blue</option>
+								<option value="6">pink</option>
+								<option value="7">white</option>
+							</select>
+						
+							<label for="sel_bottomclose">Bottom close: </label>
+							<select id="sel_bottomclose">
+								<option value="0">black</option>
+								<option value="1">yellow</option>
+								<option value="2">red</option>
+								<option value="3">blue</option>
+								<option value="4">orange</option>
+								<option value="5">light blue</option>
+								<option value="6">pink</option>
+								<option value="7">white</option>
+							</select>
+						
+							<label for="sel_topstrip">Top strip: </label>
+							<select id="sel_topstrip">
+								<option value="0">black</option>
+								<option value="1">yellow</option>
+								<option value="2">red</option>
+								<option value="3">blue</option>
+								<option value="4">orange</option>
+								<option value="5">light blue</option>
+								<option value="6">pink</option>
+								<option value="7">white</option>
+							</select>
+						
+							<label for="sel_topclose">Top close: </label>
+							<select id="sel_topclose">
+								<option value="0">black</option>
+								<option value="1">yellow</option>
+								<option value="2">red</option>
+								<option value="3">blue</option>
+								<option value="4">orange</option>
+								<option value="5">light blue</option>
+								<option value="6">pink</option>
+								<option value="7">white</option>
+							</select>
+					</div>
+			</div>	
+	</div>
 
-	<br></br>
-
-	<label for="sel_tip">Tip: </label>
-	<select id="sel_tip">
-		<option value="0">black</option>
-		<option value="1">yellow</option>
-		<option value="2">red</option>
-		<option value="3">blue</option>
-		<option value="4">orange</option>
-		<option value="5">light blue</option>
-		<option value="6">pink</option>
-		<option value="7">white</option>
-	</select>
-
-	<label for="sel_bottomstrip">Bottom strip: </label>
-	<select id="sel_bottomstrip">
-		<option value="0">black</option>
-		<option value="1">yellow</option>
-		<option value="2">red</option>
-		<option value="3">blue</option>
-		<option value="4">orange</option>
-		<option value="5">light blue</option>
-		<option value="6">pink</option>
-		<option value="7">white</option>
-	</select>
-
-	<label for="sel_bottomclose">Bottom close: </label>
-	<select id="sel_bottomclose">
-		<option value="0">black</option>
-		<option value="1">yellow</option>
-		<option value="2">red</option>
-		<option value="3">blue</option>
-		<option value="4">orange</option>
-		<option value="5">light blue</option>
-		<option value="6">pink</option>
-		<option value="7">white</option>
-	</select>
-
-	<br></br>
-
-	<label for="sel_topstrip">Top strip: </label>
-	<select id="sel_topstrip">
-		<option value="0">black</option>
-		<option value="1">yellow</option>
-		<option value="2">red</option>
-		<option value="3">blue</option>
-		<option value="4">orange</option>
-		<option value="5">light blue</option>
-		<option value="6">pink</option>
-		<option value="7">white</option>
-	</select>
-
-	<label for="sel_topclose">Top close: </label>
-	<select id="sel_topclose">
-		<option value="0">black</option>
-		<option value="1">yellow</option>
-		<option value="2">red</option>
-		<option value="3">blue</option>
-		<option value="4">orange</option>
-		<option value="5">light blue</option>
-		<option value="6">pink</option>
-		<option value="7">white</option>
-	</select>
-	
-	<img src="imgs/basic.jpg" class="color-img" />
-	<img id="A" src="imgs/A/A0.png" class="color-img" />
-	<img id="B" src="imgs/B/B0.png" class="color-img" />
-	<img id="tip" src="imgs/tip/tip0.png" class="color-img" />
-	<img id="bottomclose" src="imgs/bottomclose/bottomclose0.png" class="color-img" />
-	<img id="bottomstrip" src="imgs/bottomstrip/bottomstrip0.png" class="color-img" />
-	<img id="topclose" src="imgs/topclose/topclose0.png" class="color-img" />
-	<img id="topstrip" src="imgs/topstrip/topstrip0.png" class="color-img" />
-	<img id="pad" src="imgs/pad/pad0.png" class="color-img" />
+	<script src="js/index.js"></script>
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
-
-<script src="js/index.js"></script>
 
 </html>
 
