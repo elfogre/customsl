@@ -18,4 +18,24 @@ document.getElementById('sel_pad').onchange = function(){
     colorImage('pad', this.value);
 }
 
+document.getElementById('sel_tip').onchange = function(){
+    colorImage('tip', this.value);
+}
+
+document.getElementById('sel_bottomclose').onchange = function(){
+    colorImage('bottomclose', this.value);
+}
+
+document.getElementById('sel_bottomstrip').onchange = function(){
+    colorImage('bottomstrip', this.value);
+}
+
+document.getElementById('sel_topclose').onchange = function(){
+    colorImage('topclose', this.value);
+}
+
+document.getElementById('sel_topstrip').onchange = function(){
+    colorImage('topstrip', this.value);
+}
+
 
