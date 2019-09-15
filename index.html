@@ -2,125 +2,553 @@
 <html lang="en-US">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Custom SL skates!</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Custom SL skates!</title>
 	<link rel="stylesheet" href="css/index.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
 	<div class="container">
-			<div class="row">
-					<div class="col-6">
-							<img src="imgs/basic.jpg" class="color-img" />
-							<img id="A" src="imgs/A/A0.png" class="color-img" />
-							<img id="B" src="imgs/B/B0.png" class="color-img" />
-							<img id="tip" src="imgs/tip/tip0.png" class="color-img" />
-							<img id="bottomclose" src="imgs/bottomclose/bottomclose0.png" class="color-img" />
-							<img id="bottomstrip" src="imgs/bottomstrip/bottomstrip0.png" class="color-img" />
-							<img id="topclose" src="imgs/topclose/topclose0.png" class="color-img" />
-							<img id="topstrip" src="imgs/topstrip/topstrip0.png" class="color-img" />
-							<img id="pad" src="imgs/pad/pad0.png" class="color-img" />
+		<div class="row">
+			<div class="col-7">
+				<img src="imgs/basic.jpg" class="color-img" />
+				<img id="A" src="imgs/A/A0.png" class="color-img" />
+				<img id="B" src="imgs/B/B0.png" class="color-img" />
+				<img id="C" src="imgs/C/C0.png" class="color-img" />
+				<img id="D" src="imgs/D/D0.png" class="color-img" />
+				<img id="E" src="imgs/E/E0.png" class="color-img" />
+				<img id="F" src="imgs/F/F0.png" class="color-img" />
+				<img id="G" src="imgs/G/G0.png" class="color-img" />
+				<img id="H" src="imgs/H/H0.png" class="color-img" />
+				<img id="J" src="imgs/J/J0.png" class="color-img" />
+				<img id="tip" src="imgs/tip/tip0.png" class="color-img" />
+				<img id="bottomclose" src="imgs/bottomclose/bottomclose0.png" class="color-img" />
+				<img id="bottomstrip" src="imgs/bottomstrip/bottomstrip0.png" class="color-img" />
+				<img id="topclose" src="imgs/topclose/topclose0.png" class="color-img" />
+				<img id="topstrip" src="imgs/topstrip/topstrip0.png" class="color-img" />
+				<img id="pad" src="imgs/pad/pad0.png" class="color-img" />
+			</div>
+			<div class="col-5">
+				<div class="accordion" id="accordionColor">
+					<div class="card">
+						<div class="card-header" id="headingOne">
+							<h2 class="mb-0">
+								<button class="btn btn-link" type="button" data-toggle="collapse"
+									data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+									Main toe
+								</button>
+							</h2>
+						</div>
+
+						<div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+							data-parent="#accordionColor">
+							<div class="card-body">
+								<button type="button" class="btn btn-dark btn-lg"
+									onclick="colorImage('A', 0)">+</button>
+								<button type="button" class="btn btn-warning btn-lg"
+									onclick="colorImage('A', 1)">+</button>
+								<button type="button" class="btn btn-danger btn-lg"
+									onclick="colorImage('A', 2)">+</button>
+								<button type="button" class="btn btn-primary btn-lg"
+									onclick="colorImage('A', 3)">+</button>
+								<button type="button" class="btn btn-primary custom-btn-orange btn-lg"
+									onclick="colorImage('A', 4)">+</button>
+								<button type="button" class="btn btn-primary custom-btn-light-blue btn-lg"
+									onclick="colorImage('A', 5)">+</button>
+								<button type="button" class="btn btn-primary custom-btn-pink btn-lg"
+									onclick="colorImage('A', 6)">+</button>
+								<button type="button" class="btn btn-light btn-lg"
+									onclick="colorImage('A', 7)">+</button>
+								<button type="button" class="btn btn-success btn-lg"
+									onclick="colorImage('A', 8)">+</button>
+							</div>
+						</div>
 					</div>
-					<div class="col-6">
-							<label for="sel_A">Main toe: </label>
-							<select id="sel_A">
-								<option value="0">default</option>
-								<option value="1">yellow</option>
-								<option value="2">red</option>
-									
-							</select>
-							<label for="sel_B">Decorate toe: </label>
-							<select id="sel_B">
-								<option value="0">default</option>
-								<option value="1">yellow</option>
-								<option value="2">red</option>
-									
-							</select>
-							<label for="sel_pad">Lateral pad: </label>
-							<select id="sel_pad">
-								<option value="0">black</option>
-								<option value="1">yellow</option>
-								<option value="2">red</option>
-								<option value="3">blue</option>
-								<option value="4">orange</option>
-								<option value="5">light blue</option>
-								<option value="6">pink</option>
-								<option value="7">white</option>
-							</select>
-						
-							<label for="sel_tip">Tip: </label>
-							<select id="sel_tip">
-								<option value="0">black</option>
-								<option value="1">yellow</option>
-								<option value="2">red</option>
-								<option value="3">blue</option>
-								<option value="4">orange</option>
-								<option value="5">light blue</option>
-								<option value="6">pink</option>
-								<option value="7">white</option>
-							</select>
-						
-							<label for="sel_bottomstrip">Bottom strip: </label>
-							<select id="sel_bottomstrip">
-								<option value="0">black</option>
-								<option value="1">yellow</option>
-								<option value="2">red</option>
-								<option value="3">blue</option>
-								<option value="4">orange</option>
-								<option value="5">light blue</option>
-								<option value="6">pink</option>
-								<option value="7">white</option>
-							</select>
-						
-							<label for="sel_bottomclose">Bottom close: </label>
-							<select id="sel_bottomclose">
-								<option value="0">black</option>
-								<option value="1">yellow</option>
-								<option value="2">red</option>
-								<option value="3">blue</option>
-								<option value="4">orange</option>
-								<option value="5">light blue</option>
-								<option value="6">pink</option>
-								<option value="7">white</option>
-							</select>
-						
-							<label for="sel_topstrip">Top strip: </label>
-							<select id="sel_topstrip">
-								<option value="0">black</option>
-								<option value="1">yellow</option>
-								<option value="2">red</option>
-								<option value="3">blue</option>
-								<option value="4">orange</option>
-								<option value="5">light blue</option>
-								<option value="6">pink</option>
-								<option value="7">white</option>
-							</select>
-						
-							<label for="sel_topclose">Top close: </label>
-							<select id="sel_topclose">
-								<option value="0">black</option>
-								<option value="1">yellow</option>
-								<option value="2">red</option>
-								<option value="3">blue</option>
-								<option value="4">orange</option>
-								<option value="5">light blue</option>
-								<option value="6">pink</option>
-								<option value="7">white</option>
-							</select>
+					<div class="card">
+						<div class="card-header" id="headingTwo">
+							<h2 class="mb-0">
+								<button class="btn btn-link" type="button" data-toggle="collapse"
+									data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+									Decorate toe
+								</button>
+							</h2>
+						</div>
+
+						<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+							data-parent="#accordionColor">
+							<div class="card-body">
+								<button type="button" class="btn btn-dark btn-lg"
+									onclick="colorImage('B', 0)">+</button>
+								<button type="button" class="btn btn-warning btn-lg"
+									onclick="colorImage('B', 1)">+</button>
+								<button type="button" class="btn btn-danger btn-lg"
+									onclick="colorImage('B', 2)">+</button>
+								<button type="button" class="btn btn-primary btn-lg"
+									onclick="colorImage('B', 3)">+</button>
+								<button type="button" class="btn btn-primary custom-btn-orange btn-lg"
+									onclick="colorImage('B', 4)">+</button>
+								<button type="button" class="btn btn-primary custom-btn-light-blue btn-lg"
+									onclick="colorImage('B', 5)">+</button>
+								<button type="button" class="btn btn-primary custom-btn-pink btn-lg"
+									onclick="colorImage('B', 6)">+</button>
+								<button type="button" class="btn btn-light btn-lg"
+									onclick="colorImage('B', 7)">+</button>
+								<button type="button" class="btn btn-success btn-lg"
+									onclick="colorImage('B', 8)">+</button>
+							</div>
+						</div>
 					</div>
-			</div>	
+					<div class="card">
+						<div class="card-header" id="headingC">
+							<h2 class="mb-0">
+								<button class="btn btn-link" type="button" data-toggle="collapse"
+									data-target="#collapseC" aria-expanded="false" aria-controls="collapseC">
+									Toe strap
+								</button>
+							</h2>
+						</div>
+
+						<div id="collapseC" class="collapse" aria-labelledby="headingC"
+							data-parent="#accordionColor">
+							<div class="card-body">
+								<button type="button" class="btn btn-dark btn-lg"
+									onclick="colorImage('C', 0)">+</button>
+								<button type="button" class="btn btn-warning btn-lg"
+									onclick="colorImage('C', 1)">+</button>
+								<button type="button" class="btn btn-danger btn-lg"
+									onclick="colorImage('C', 2)">+</button>
+								<button type="button" class="btn btn-primary btn-lg"
+									onclick="colorImage('C', 3)">+</button>
+								<button type="button" class="btn btn-primary custom-btn-orange btn-lg"
+									onclick="colorImage('C', 4)">+</button>
+								<button type="button" class="btn btn-primary custom-btn-light-blue btn-lg"
+									onclick="colorImage('C', 5)">+</button>
+								<button type="button" class="btn btn-primary custom-btn-pink btn-lg"
+									onclick="colorImage('C', 6)">+</button>
+								<button type="button" class="btn btn-light btn-lg"
+									onclick="colorImage('C', 7)">+</button>
+								<button type="button" class="btn btn-success btn-lg"
+									onclick="colorImage('C', 8)">+</button>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="headingD">
+							<h2 class="mb-0">
+								<button class="btn btn-link" type="button" data-toggle="collapse"
+									data-target="#collapseD" aria-expanded="false" aria-controls="collapseD">
+									Eyelet
+								</button>
+							</h2>
+						</div>
+
+						<div id="collapseD" class="collapse" aria-labelledby="headingD"
+							data-parent="#accordionColor">
+							<div class="card-body">
+								<button type="button" class="btn btn-dark btn-lg"
+									onclick="colorImage('D', 0)">+</button>
+								<button type="button" class="btn btn-warning btn-lg"
+									onclick="colorImage('D', 1)">+</button>
+								<button type="button" class="btn btn-danger btn-lg"
+									onclick="colorImage('D', 2)">+</button>
+								<button type="button" class="btn btn-primary btn-lg"
+									onclick="colorImage('D', 3)">+</button>
+								<button type="button" class="btn btn-primary custom-btn-orange btn-lg"
+									onclick="colorImage('D', 4)">+</button>
+								<button type="button" class="btn btn-primary custom-btn-light-blue btn-lg"
+									onclick="colorImage('D', 5)">+</button>
+								<button type="button" class="btn btn-primary custom-btn-pink btn-lg"
+									onclick="colorImage('D', 6)">+</button>
+								<button type="button" class="btn btn-light btn-lg"
+									onclick="colorImage('D', 7)">+</button>
+								<button type="button" class="btn btn-success btn-lg"
+									onclick="colorImage('D', 8)">+</button>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="headingE">
+							<h2 class="mb-0">
+								<button class="btn btn-link" type="button" data-toggle="collapse"
+									data-target="#collapseE" aria-expanded="false" aria-controls="collapseE">
+									Main body
+								</button>
+							</h2>
+						</div>
+
+						<div id="collapseE" class="collapse" aria-labelledby="headingE"
+							data-parent="#accordionColor">
+							<div class="card-body">
+								<button type="button" class="btn btn-dark btn-lg"
+									onclick="colorImage('E', 0)">+</button>
+								<button type="button" class="btn btn-warning btn-lg"
+									onclick="colorImage('E', 1)">+</button>
+								<button type="button" class="btn btn-danger btn-lg"
+									onclick="colorImage('E', 2)">+</button>
+								<button type="button" class="btn btn-primary btn-lg"
+									onclick="colorImage('E', 3)">+</button>
+								<button type="button" class="btn btn-primary custom-btn-orange btn-lg"
+									onclick="colorImage('E', 4)">+</button>
+								<button type="button" class="btn btn-primary custom-btn-light-blue btn-lg"
+									onclick="colorImage('E', 5)">+</button>
+								<button type="button" class="btn btn-primary custom-btn-pink btn-lg"
+									onclick="colorImage('E', 6)">+</button>
+								<button type="button" class="btn btn-light btn-lg"
+									onclick="colorImage('E', 7)">+</button>
+								<button type="button" class="btn btn-success btn-lg"
+									onclick="colorImage('E', 8)">+</button>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="headingF">
+							<h2 class="mb-0">
+								<button class="btn btn-link" type="button" data-toggle="collapse"
+									data-target="#collapseF" aria-expanded="false" aria-controls="collapseF">
+									Cuff strap
+								</button>
+							</h2>
+						</div>
+
+						<div id="collapseF" class="collapse" aria-labelledby="headingF"
+							data-parent="#accordionColor">
+							<div class="card-body">
+								<button type="button" class="btn btn-dark btn-lg"
+									onclick="colorImage('F', 0)">+</button>
+								<button type="button" class="btn btn-warning btn-lg"
+									onclick="colorImage('F', 1)">+</button>
+								<button type="button" class="btn btn-danger btn-lg"
+									onclick="colorImage('F', 2)">+</button>
+								<button type="button" class="btn btn-primary btn-lg"
+									onclick="colorImage('F', 3)">+</button>
+								<button type="button" class="btn btn-primary custom-btn-orange btn-lg"
+									onclick="colorImage('F', 4)">+</button>
+								<button type="button" class="btn btn-primary custom-btn-light-blue btn-lg"
+									onclick="colorImage('F', 5)">+</button>
+								<button type="button" class="btn btn-primary custom-btn-pink btn-lg"
+									onclick="colorImage('F', 6)">+</button>
+								<button type="button" class="btn btn-light btn-lg"
+									onclick="colorImage('F', 7)">+</button>
+								<button type="button" class="btn btn-success btn-lg"
+									onclick="colorImage('F', 8)">+</button>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="headingG">
+							<h2 class="mb-0">
+								<button class="btn btn-link" type="button" data-toggle="collapse"
+									data-target="#collapseG" aria-expanded="false" aria-controls="collapseG">
+									Tongue
+								</button>
+							</h2>
+						</div>
+
+						<div id="collapseG" class="collapse" aria-labelledby="headingG"
+							data-parent="#accordionColor">
+							<div class="card-body">
+								<button type="button" class="btn btn-dark btn-lg"
+									onclick="colorImage('G', 0)">+</button>
+								<button type="button" class="btn btn-warning btn-lg"
+									onclick="colorImage('G', 1)">+</button>
+								<button type="button" class="btn btn-danger btn-lg"
+									onclick="colorImage('G', 2)">+</button>
+								<button type="button" class="btn btn-primary btn-lg"
+									onclick="colorImage('G', 3)">+</button>
+								<button type="button" class="btn btn-primary custom-btn-orange btn-lg"
+									onclick="colorImage('G', 4)">+</button>
+								<button type="button" class="btn btn-primary custom-btn-light-blue btn-lg"
+									onclick="colorImage('G', 5)">+</button>
+								<button type="button" class="btn btn-primary custom-btn-pink btn-lg"
+									onclick="colorImage('G', 6)">+</button>
+								<button type="button" class="btn btn-light btn-lg"
+									onclick="colorImage('G', 7)">+</button>
+								<button type="button" class="btn btn-success btn-lg"
+									onclick="colorImage('G', 8)">+</button>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="headingH">
+							<h2 class="mb-0">
+								<button class="btn btn-link" type="button" data-toggle="collapse"
+									data-target="#collapseH" aria-expanded="false" aria-controls="collapseH">
+									Collar
+								</button>
+							</h2>
+						</div>
+
+						<div id="collapseH" class="collapse" aria-labelledby="headingH"
+							data-parent="#accordionColor">
+							<div class="card-body">
+								<button type="button" class="btn btn-dark btn-lg"
+									onclick="colorImage('H', 0)">+</button>
+								<button type="button" class="btn btn-warning btn-lg"
+									onclick="colorImage('H', 1)">+</button>
+								<button type="button" class="btn btn-danger btn-lg"
+									onclick="colorImage('H', 2)">+</button>
+								<button type="button" class="btn btn-primary btn-lg"
+									onclick="colorImage('H', 3)">+</button>
+								<button type="button" class="btn btn-primary custom-btn-orange btn-lg"
+									onclick="colorImage('H', 4)">+</button>
+								<button type="button" class="btn btn-primary custom-btn-light-blue btn-lg"
+									onclick="colorImage('H', 5)">+</button>
+								<button type="button" class="btn btn-primary custom-btn-pink btn-lg"
+									onclick="colorImage('H', 6)">+</button>
+								<button type="button" class="btn btn-light btn-lg"
+									onclick="colorImage('H', 7)">+</button>
+								<button type="button" class="btn btn-success btn-lg"
+									onclick="colorImage('H', 8)">+</button>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="headingJ">
+							<h2 class="mb-0">
+								<button class="btn btn-link" type="button" data-toggle="collapse"
+									data-target="#collapseJ" aria-expanded="false" aria-controls="collapseJ">
+									Carry strap
+								</button>
+							</h2>
+						</div>
+
+						<div id="collapseJ" class="collapse" aria-labelledby="headingJ"
+							data-parent="#accordionColor">
+							<div class="card-body">
+								<button type="button" class="btn btn-dark btn-lg"
+									onclick="colorImage('J', 0)">+</button>
+								<button type="button" class="btn btn-warning btn-lg"
+									onclick="colorImage('J', 1)">+</button>
+								<button type="button" class="btn btn-danger btn-lg"
+									onclick="colorImage('J', 2)">+</button>
+								<button type="button" class="btn btn-primary btn-lg"
+									onclick="colorImage('J', 3)">+</button>
+								<button type="button" class="btn btn-primary custom-btn-orange btn-lg"
+									onclick="colorImage('J', 4)">+</button>
+								<button type="button" class="btn btn-primary custom-btn-light-blue btn-lg"
+									onclick="colorImage('J', 5)">+</button>
+								<button type="button" class="btn btn-primary custom-btn-pink btn-lg"
+									onclick="colorImage('J', 6)">+</button>
+								<button type="button" class="btn btn-light btn-lg"
+									onclick="colorImage('J', 7)">+</button>
+								<button type="button" class="btn btn-success btn-lg"
+									onclick="colorImage('J', 8)">+</button>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="headingThree">
+							<h2 class="mb-0">
+								<button class="btn btn-link" type="button" data-toggle="collapse"
+									data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+									Lateral pad
+								</button>
+							</h2>
+						</div>
+
+						<div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+							data-parent="#accordionColor">
+							<div class="card-body">
+								<button type="button" class="btn btn-dark btn-lg"
+									onclick="colorImage('pad', 0)">+</button>
+								<button type="button" class="btn btn-warning btn-lg"
+									onclick="colorImage('pad', 1)">+</button>
+								<button type="button" class="btn btn-danger btn-lg"
+									onclick="colorImage('pad', 2)">+</button>
+								<button type="button" class="btn btn-primary btn-lg"
+									onclick="colorImage('pad', 3)">+</button>
+								<button type="button" class="btn btn-primary custom-btn-orange btn-lg"
+									onclick="colorImage('pad', 4)">+</button>
+								<button type="button" class="btn btn-primary custom-btn-light-blue btn-lg"
+									onclick="colorImage('pad', 5)">+</button>
+								<button type="button" class="btn btn-primary custom-btn-pink btn-lg"
+									onclick="colorImage('pad', 6)">+</button>
+								<button type="button" class="btn btn-light btn-lg"
+									onclick="colorImage('pad', 7)">+</button>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="headingFour">
+							<h2 class="mb-0">
+								<button class="btn btn-link" type="button" data-toggle="collapse"
+									data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+									Tip
+								</button>
+							</h2>
+						</div>
+
+						<div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+							data-parent="#accordionColor">
+							<div class="card-body">
+								<button type="button" class="btn btn-dark btn-lg"
+									onclick="colorImage('tip', 0)">+</button>
+								<button type="button" class="btn btn-warning btn-lg"
+									onclick="colorImage('tip', 1)">+</button>
+								<button type="button" class="btn btn-danger btn-lg"
+									onclick="colorImage('tip', 2)">+</button>
+								<button type="button" class="btn btn-primary btn-lg"
+									onclick="colorImage('tip', 3)">+</button>
+								<button type="button" class="btn btn-primary custom-btn-orange btn-lg"
+									onclick="colorImage('tip', 4)">+</button>
+								<button type="button" class="btn btn-primary custom-btn-light-blue btn-lg"
+									onclick="colorImage('tip', 5)">+</button>
+								<button type="button" class="btn btn-primary custom-btn-pink btn-lg"
+									onclick="colorImage('tip', 6)">+</button>
+								<button type="button" class="btn btn-light btn-lg"
+									onclick="colorImage('tip', 7)">+</button>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="headingFive">
+							<h2 class="mb-0">
+								<button class="btn btn-link" type="button" data-toggle="collapse"
+									data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+									Bottom strip
+								</button>
+							</h2>
+						</div>
+
+						<div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+							data-parent="#accordionColor">
+							<div class="card-body">
+								<button type="button" class="btn btn-dark btn-lg"
+									onclick="colorImage('bottomstrip', 0)">+</button>
+								<button type="button" class="btn btn-warning btn-lg"
+									onclick="colorImage('bottomstrip', 1)">+</button>
+								<button type="button" class="btn btn-danger btn-lg"
+									onclick="colorImage('bottomstrip', 2)">+</button>
+								<button type="button" class="btn btn-primary btn-lg"
+									onclick="colorImage('bottomstrip', 3)">+</button>
+								<button type="button" class="btn btn-primary custom-btn-orange btn-lg"
+									onclick="colorImage('bottomstrip', 4)">+</button>
+								<button type="button" class="btn btn-primary custom-btn-light-blue btn-lg"
+									onclick="colorImage('bottomstrip', 5)">+</button>
+								<button type="button" class="btn btn-primary custom-btn-pink btn-lg"
+									onclick="colorImage('bottomstrip', 6)">+</button>
+								<button type="button" class="btn btn-light btn-lg"
+									onclick="colorImage('bottomstrip', 7)">+</button>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="headingSix">
+							<h2 class="mb-0">
+								<button class="btn btn-link" type="button" data-toggle="collapse"
+									data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+									Bottom close
+								</button>
+							</h2>
+						</div>
+
+						<div id="collapseSix" class="collapse" aria-labelledby="headingSix"
+							data-parent="#accordionColor">
+							<div class="card-body">
+								<button type="button" class="btn btn-dark btn-lg"
+									onclick="colorImage('bottomclose', 0)">+</button>
+								<button type="button" class="btn btn-warning btn-lg"
+									onclick="colorImage('bottomclose', 1)">+</button>
+								<button type="button" class="btn btn-danger btn-lg"
+									onclick="colorImage('bottomclose', 2)">+</button>
+								<button type="button" class="btn btn-primary btn-lg"
+									onclick="colorImage('bottomclose', 3)">+</button>
+								<button type="button" class="btn btn-primary custom-btn-orange btn-lg"
+									onclick="colorImage('bottomclose', 4)">+</button>
+								<button type="button" class="btn btn-primary custom-btn-light-blue btn-lg"
+									onclick="colorImage('bottomclose', 5)">+</button>
+								<button type="button" class="btn btn-primary custom-btn-pink btn-lg"
+									onclick="colorImage('bottomclose', 6)">+</button>
+								<button type="button" class="btn btn-light btn-lg"
+									onclick="colorImage('bottomclose', 7)">+</button>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="headingSeven">
+							<h2 class="mb-0">
+								<button class="btn btn-link" type="button" data-toggle="collapse"
+									data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+									Top strip
+								</button>
+							</h2>
+						</div>
+
+						<div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
+							data-parent="#accordionColor">
+							<div class="card-body">
+								<button type="button" class="btn btn-dark btn-lg"
+									onclick="colorImage('topstrip', 0)">+</button>
+								<button type="button" class="btn btn-warning btn-lg"
+									onclick="colorImage('topstrip', 1)">+</button>
+								<button type="button" class="btn btn-danger btn-lg"
+									onclick="colorImage('topstrip', 2)">+</button>
+								<button type="button" class="btn btn-primary btn-lg"
+									onclick="colorImage('topstrip', 3)">+</button>
+								<button type="button" class="btn btn-primary custom-btn-orange btn-lg"
+									onclick="colorImage('topstrip', 4)">+</button>
+								<button type="button" class="btn btn-primary custom-btn-light-blue btn-lg"
+									onclick="colorImage('topstrip', 5)">+</button>
+								<button type="button" class="btn btn-primary custom-btn-pink btn-lg"
+									onclick="colorImage('topstrip', 6)">+</button>
+								<button type="button" class="btn btn-light btn-lg"
+									onclick="colorImage('topstrip', 7)">+</button>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="headingEight">
+							<h2 class="mb-0">
+								<button class="btn btn-link" type="button" data-toggle="collapse"
+									data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+									Top close
+								</button>
+							</h2>
+						</div>
+
+						<div id="collapseEight" class="collapse" aria-labelledby="headingEight"
+							data-parent="#accordionColor">
+							<div class="card-body">
+								<button type="button" class="btn btn-dark btn-lg"
+									onclick="colorImage('topclose', 0)">+</button>
+								<button type="button" class="btn btn-warning btn-lg"
+									onclick="colorImage('topclose', 1)">+</button>
+								<button type="button" class="btn btn-danger btn-lg"
+									onclick="colorImage('topclose', 2)">+</button>
+								<button type="button" class="btn btn-primary btn-lg"
+									onclick="colorImage('topclose', 3)">+</button>
+								<button type="button" class="btn btn-primary custom-btn-orange btn-lg"
+									onclick="colorImage('topclose', 4)">+</button>
+								<button type="button" class="btn btn-primary custom-btn-light-blue btn-lg"
+									onclick="colorImage('topclose', 5)">+</button>
+								<button type="button" class="btn btn-primary custom-btn-pink btn-lg"
+									onclick="colorImage('topclose', 6)">+</button>
+								<button type="button" class="btn btn-light btn-lg"
+									onclick="colorImage('topclose', 7)">+</button>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<script src="js/index.js"></script>
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
 </body>
 
 </html>
-
-

@@ -5,3 +5,18 @@ img.color-img {
 	  height: auto;
 	  width: auto;
 }
+
+.btn-primary.custom-btn-orange {
+	background-color: rgb(255, 115, 0) !important;
+	border-color: rgb(255, 115, 0) !important;
+}
+
+.btn-primary.custom-btn-light-blue {
+	background-color: rgb(28, 238, 253) !important;
+	border-color: rgb(28, 238, 253) !important;
+}
+
+.btn-primary.custom-btn-pink {
+	background-color: rgb(226, 29, 233) !important;
+	border-color: rgb(226, 29, 233) !important;
+}
