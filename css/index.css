@@ -1,9 +1,7 @@
 img.color-img {
 	position: absolute;
-	top: 5%;
-  	left: -60%;
-	  height: auto;
-	  width: auto;
+	  height: inherit;
+	  width: inherit;
 }
 
 .btn-primary.custom-btn-orange {
@@ -19,4 +17,8 @@ img.color-img {
 .btn-primary.custom-btn-pink {
 	background-color: rgb(226, 29, 233) !important;
 	border-color: rgb(226, 29, 233) !important;
+}
+
+.h20 {
+    height: 20px;   
 }
